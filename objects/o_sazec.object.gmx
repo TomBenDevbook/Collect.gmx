@@ -37,7 +37,7 @@ iy=B;
 
 repeat(312)
 {
-ids=instance_create(ix+off_x,iy+off_y,o_gem);
+ids=instance_create(ix+off_x,iy+off_y,o_gem); //natvořit v určené pozici
 (ids).image_speed=0; (ids).image_index=image_number-1; //last frame transparent
 (ids).alarm[1]=irandom_range(1,100);
 ix+=45; if ix&gt;room_width-B { ix=B; iy+=45 }
